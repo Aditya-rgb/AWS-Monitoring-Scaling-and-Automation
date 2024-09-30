@@ -241,7 +241,7 @@ def setup_sns_notifications():
         sns_client.subscribe(
             TopicArn=health_topic['TopicArn'],
             Protocol='email',  # or 'sms'
-            Endpoint='your-email@example.com'  # Replace with your email or phone number
+            Endpoint='adityavakharia@gmail.com'  # Replace with your email or phone number
         )
 
         sns_client.subscribe(
@@ -253,7 +253,7 @@ def setup_sns_notifications():
         sns_client.subscribe(
             TopicArn=high_traffic_topic['TopicArn'],
             Protocol='email',
-            Endpoint='your-email@example.com'
+            Endpoint='adityavakharia@gmail.com'
         )
 
         print('SNS subscriptions created for health, scaling, and traffic alerts.')
